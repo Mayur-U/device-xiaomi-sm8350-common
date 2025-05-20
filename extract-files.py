@@ -89,6 +89,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hardware.graphics.common-V3-ndk.so', 'android.hardware.graphics.common-V5-ndk.so')
         .replace_needed('android.hardware.graphics.allocator-V1-ndk.so', 'android.hardware.graphics.allocator-V2-ndk.so'),
     # Dolby END
+    'system_ext/lib64/libwfdnative.so': blob_fixup()
+        .add_needed('libbinder_shim.so')
+        .add_needed('libinput_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
