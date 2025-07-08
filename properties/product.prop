@@ -5,6 +5,9 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
 
+# eBPF
+ro.bpf.kver_override=5.10.239
+
 # LMK tuning
 ro.lmk.filecache_min_kb=153600
 ro.lmk.kill_timeout_ms=50
