@@ -1,6 +1,5 @@
 #
 # SPDX-FileCopyrightText: The LineageOS Project
-# SPDX-FileCopyrightText: PixelOS
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -59,7 +58,7 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    vendor/lineage/config/device_framework_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
@@ -119,7 +118,7 @@ BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
--include vendor/aosp/config/BoardConfigReservedSize.mk
+-include vendor/lineage/config/BoardConfigReservedSize.mk
 BOARD_SYSTEM_EXTIMAGE_PARTITION_RESERVED_SIZE := 104857600
 BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 104857600
 
