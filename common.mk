@@ -23,9 +23,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# Inherit BCR
-$(call inherit-product, vendor/bcr/bcr.mk)
-
 # Always preopt extracted APKs to prevent extracting out of the APK for gms modules.
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
 
