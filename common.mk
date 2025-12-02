@@ -131,6 +131,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
 
+#blur 
+TARGET_ENABLE_BLUR := true
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64
