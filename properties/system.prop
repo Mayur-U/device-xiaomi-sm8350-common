@@ -7,9 +7,6 @@ persist.vendor.cne.feature=1
 # Disable MTE Async for system server
 persist.arm64.memtag.system_server=off
 
-# Graphics
-ro.config.avoid_gfx_accel=true
-
 # Media
 media.aac_51_output_enabled=true
 media.stagefright.enable-aac=true
