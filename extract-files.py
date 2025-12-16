@@ -73,7 +73,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/android.hardware.secure_element@1.0-impl.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
     'vendor/lib64/libmisight.so': blob_fixup()
-        .add_needed('libjsoncpp_shim.so'),
+        .add_needed('libjsoncpp_shim.so')
+        .add_needed('libmisightjson_shim.so'),
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .add_needed('libbinder_shim.so')
         .add_needed('libinput_shim.so'),
