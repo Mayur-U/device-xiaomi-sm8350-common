@@ -1,5 +1,4 @@
-# All unpinned blobs below are extracted from redwood OS2.0.11.0.UMSMIXM
-# dada: dada OS2.0.217.0.WOCMIXM
+# All unpinned blobs below are extracted from redwood OS2.0.12.0.UMSMIXM
 # lisa: OS2.0.11.0.UKOCNXM
 # sunstone: OS2.0.1.0.UMQMIXM
 
