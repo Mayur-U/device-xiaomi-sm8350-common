@@ -273,6 +273,7 @@ persist.vendor.sensors.sync_request=true
 ro.incremental.enable=yes
 
 # Thermal
+persist.vendor.tracking.dfs=true
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # USB
