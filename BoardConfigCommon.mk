@@ -46,6 +46,9 @@ TARGET_NO_BOOTLOADER := true
 # Display
 TARGET_SCREEN_DENSITY ?= 440
 
+# Dolby Atmos
+include vendor/oneplus/dolby/BoardConfigDolby.mk
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
@@ -57,12 +60,14 @@ DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml
+    hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
+    vendor/oneplus/dolby/vintf/dolby_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE := \
     $(COMMON_PATH)/hidl/manifest_lahaina.xml \
     $(COMMON_PATH)/hidl/manifest_xiaomi.xml \
-    $(if $(TARGET_NFC_SUPPORTED_SKUS),$(COMMON_PATH)/hidl/manifest_no_nfc.xml,)
+    $(if $(TARGET_NFC_SUPPORTED_SKUS),$(COMMON_PATH)/hidl/manifest_no_nfc.xml,) \
+    vendor/oneplus/dolby/vintf/dolby_manifest.xml
 
 ifneq ($(TARGET_NFC_SUPPORTED_SKUS),)
 ODM_MANIFEST_SKUS += $(TARGET_NFC_SUPPORTED_SKUS)
