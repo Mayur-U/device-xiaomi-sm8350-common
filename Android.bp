@@ -5,7 +5,6 @@
 
 soong_namespace {
     imports: [
-        "hardware/sony/timekeep",
         "hardware/xiaomi",
     ],
 }

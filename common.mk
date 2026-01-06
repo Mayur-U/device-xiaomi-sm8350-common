@@ -448,7 +448,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client \
-    hardware/sony/timekeep \
     hardware/xiaomi
 
 # Telephony
@@ -478,10 +477,6 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
-
-# TimeKeep
-PRODUCT_PACKAGES += \
-    TimeKeep
 
 # Touchscreen
 PRODUCT_COPY_FILES += \
