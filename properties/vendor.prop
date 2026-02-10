@@ -158,7 +158,7 @@ vendor.gatekeeper.disable_spu=true
 # Graphics
 debug.graphics.game_default_frame_rate.disabled=true
 debug.sf.disable_client_composition_cache=0
-debug.sf.enable_gl_backpressure=0
+debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.frame_rate_multiple_threshold=60
 persist.sys.sf.color_mode=9
